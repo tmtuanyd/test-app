@@ -42,7 +42,7 @@ const validationSchema = Yup.object().shape({
   lastName: Yup.string()
     .matches(/^[A-Za-z ]*$/, "Wrong format")
     .required("Required field"),
-  email: Yup.string().email("Wrong format"),
+  email: Yup.string().email("Wrong format").required("Required field"),
   gender: Yup.string().required(),
   startDate: Yup.date(),
   birthday: Yup.date(),
