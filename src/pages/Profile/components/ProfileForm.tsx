@@ -45,6 +45,7 @@ const validationSchema = Yup.object().shape({
   email: Yup.string().email("Wrong format"),
   gender: Yup.string().required(),
   startDate: Yup.date(),
+  birthday: Yup.date(),
 });
 
 const ProfileForm = () => {
